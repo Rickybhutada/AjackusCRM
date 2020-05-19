@@ -1,0 +1,75 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Contact V17
+    %meta{:charset => "UTF-8"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    / ===============================================================================================
+    %link{:href => "images/icons/favicon.ico", :rel => "icon", :type => "image/png"}/
+  %body
+    .container-contact100
+      .wrap-contact100
+        %form.contact100-form.validate-form
+          %span.contact100-form-title
+            #{t '.send_us_a_message'}
+          %label.label-input100{:for => "first-name"}  #{t '.tell_us_your_name'} *
+          .wrap-input100.rs1-wrap-input100.validate-input{"data-validate" => "#{t '.error.first' }"}
+            %input#first-name.input100{:name => "first_name", :placeholder => "#{User.human_attribute_name(:first_name)}", :type => "text"}/
+            %span.focus-input100
+          .wrap-input100.rs2-wrap-input100.validate-input{"data-validate" => "#{t '.error.last' }"}
+            %input.input100{:name => "last_name", :placeholder => "#{User.human_attribute_name(:last_name)}", :type => "text"}/
+            %span.focus-input100
+          %label.label-input100{:for => "email"} #{t '.enter_your_email'} *
+          .wrap-input100.validate-input{"data-validate" => "#{t '.error.email' }: ex@abc.xyz"}
+            %input#email.input100{:name => "email", :placeholder => "Eg. example@email.com", :type => "text"}/
+            %span.focus-input100
+          %label.label-input100{:for => "phone"} #{t '.enter_your_number'}
+          .wrap-input100
+            %input#phone.input100{:name => "phone", :placeholder => "Eg. +1 800 000000", :type => "text"}/
+            %span.focus-input100
+          %label.label-input100{:for => "message"} #{t '.message'} *
+          .wrap-input100.validate-input{"data-validate" => "#{t '.error.message' }"}
+            %textarea#message.input100{:name => "message", :placeholder => "#{t '.write_us_message'}"}
+            %span.focus-input100
+          .container-contact100-form-btn
+            %button.contact100-form-btn
+              #{t '.send_message'}
+        .contact100-more.flex-col-c-m{:style => "background-image: url('/assets/bg-01.jpg');"}
+          .flex-w.size1.p-b-47
+            .txt1.p-r-25
+              %span.lnr.lnr-map-marker
+            .flex-col.size2
+              %span.txt1.p-b-20
+                #{t '.address'}
+              %span.txt2
+                Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US
+          .dis-flex.size1.p-b-47
+            .txt1.p-r-25
+              %span.lnr.lnr-phone-handset
+            .flex-col.size2
+              %span.txt1.p-b-20
+                #{t '.lets_talk'}
+              %span.txt3
+                +1 800 1236879
+          .dis-flex.size1.p-b-47
+            .txt1.p-r-25
+              %span.lnr.lnr-envelope
+            .flex-col.size2
+              %span.txt1.p-b-20
+                #{t '.general_support'}
+              %span.txt3
+                contact@example.com
+    #dropDownSelect1
+    :javascript
+      $(".selection-2").select2({
+      	minimumResultsForSearch: 20,
+      	dropdownParent: $('#dropDownSelect1')
+      });
+    %script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"}
+    :javascript
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-23581568-13');

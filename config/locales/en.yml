@@ -1,0 +1,25 @@
+en:
+  hello: "Hello world"
+  welcome:
+    index:
+      send_us_a_message: "Send Us A Message"
+      tell_us_your_name: "Tell us your name"
+      enter_your_email: "Enter your email"
+      enter_your_number: "Enter phone number"
+      message: "Message"
+      send_message: "Send Message"
+      address: "Address"
+      lets_talk: "Lets Talk"
+      general_support: "General Support"
+      email_place: "Eg. example@email.com"
+      write_us_message: "Write us message"
+      error:
+        first: "Type First Name"
+        last: "Type Last Name"
+        message: "Message is required"
+        email: "Valid email is required"
+  activerecord:
+   attributes:
+    user:
+     first_name: "First Name"
+     last_name: "Last Name"

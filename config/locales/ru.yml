@@ -1,0 +1,25 @@
+ru:
+  hello: "Hello world"
+  welcome:
+    index:
+      send_us_a_message: "Отправьте нам сообщение"
+      tell_us_your_name: "Скажи нам свое имя"
+      enter_your_email: "Введите адрес электронной почты"
+      enter_your_number: "Введите номер телефона"
+      message: "Сообщение"
+      send_message: "Отправить сообщение"
+      address: "Адрес"
+      lets_talk: "Давай поговорим"
+      general_support: "Общая поддержка"
+      email_place: "Eg. example@email.com"
+      write_us_message: "Напишите нам сообщение"
+      error:
+        first: "Введите Имя"
+        last: "Введите Фамилию"
+        message: "Сообщение обязательно"
+        email: "Требуется действительный адрес электронной почты"
+  activerecord:
+   attributes:
+    user:
+     first_name: "Имя"
+     last_name: "Фамилия"
