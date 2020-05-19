@@ -9,12 +9,17 @@ Things you may want to cover:
 
 * Database Required => MySQL
 
-Step 1 Clone the project 
-Step 2 bundle i
-Step 3 rake db:setup
-step 4 Add G mail credentials in the setting.yml
-Step 5 Visit localhost:3000 and use the website.
+Things for setup the project
 
+Step 1 Clone the project 
+
+Step 2 bundle i
+
+Step 3 rake db:setup
+
+step 4 Add G mail credentials in the setting.yml
+
+Step 5 Visit localhost:3000 and use the website.
 
 
 Please feel free to use a different markup language if you do not plan to run
